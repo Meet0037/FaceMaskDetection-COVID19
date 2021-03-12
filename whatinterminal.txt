@@ -1,0 +1,765 @@
+meet@Nitro-AN515-54:~$ gedit Desktop
+meet@Nitro-AN515-54:~$ cd Desktop
+meet@Nitro-AN515-54:~/Desktop$ cd Semester5
+meet@Nitro-AN515-54:~/Desktop/Semester5$ cd projects
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects$ cd Facemaskdetection
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
+Cloning into 'Face-Mask-Detection'...
+remote: Enumerating objects: 3910, done.
+remote: Total 3910 (delta 0), reused 0 (delta 0), pack-reused 3910
+Receiving objects: 100% (3910/3910), 148.67 MiB | 324.00 KiB/s, done.
+Resolving deltas: 100% (71/71), done.
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv test
+mkvirtualenv: command not found
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv test
+mkvirtualenv: command not found
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv test
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv testNitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirmkvirtualenv: command not found
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenvmeet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv test^C
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ virtualenv --version
+
+Command 'virtualenv' not found, but can be installed with:
+
+sudo apt install virtualenv
+
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ mkvirtualenv Facemaskdetection
+mkvirtualenv: command not found
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ python3 -m venv my-project-env
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt-get install python3-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: ['/home/meet/Desktop/Semester5/projects/Facemaskdetection/my-project-env/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']
+
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ sudo apt-get install python-pip
+[sudo] password for meet: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python-pip-whl python3-pip
+The following packages will be upgraded:
+  python-pip python-pip-whl python3-pip
+3 upgraded, 0 newly installed, 0 to remove and 337 not upgraded.
+Need to get 1,917 kB of archives.
+After this operation, 1,024 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python3-pip all 9.0.1-2.3~ubuntu1.18.04.2 [114 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip all 9.0.1-2.3~ubuntu1.18.04.2 [151 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip-whl all 9.0.1-2.3~ubuntu1.18.04.2 [1,653 kB]
+Fetched 1,917 kB in 5s (388 kB/s)           
+(Reading database ... 197337 files and directories currently installed.)
+Preparing to unpack .../python3-pip_9.0.1-2.3~ubuntu1.18.04.2_all.deb ...
+Unpacking python3-pip (9.0.1-2.3~ubuntu1.18.04.2) over (9.0.1-2.3~ubuntu1.18.04.1) ...
+Preparing to unpack .../python-pip_9.0.1-2.3~ubuntu1.18.04.2_all.deb ...
+Unpacking python-pip (9.0.1-2.3~ubuntu1.18.04.2) over (9.0.1-2.3~ubuntu1.18.04.1) ...
+Preparing to unpack .../python-pip-whl_9.0.1-2.3~ubuntu1.18.04.2_all.deb ...
+Unpacking python-pip-whl (9.0.1-2.3~ubuntu1.18.04.2) over (9.0.1-2.3~ubuntu1.18.04.1) ...
+Setting up python-pip-whl (9.0.1-2.3~ubuntu1.18.04.2) ...
+Setting up python3-pip (9.0.1-2.3~ubuntu1.18.04.2) ...
+Setting up python-pip (9.0.1-2.3~ubuntu1.18.04.2) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+libdvd-pkg: Checking orig.tar integrity...
+/usr/src/libdvd-pkg/libdvdcss_1.4.2.orig.tar.bz2: OK
+libdvd-pkg: `apt-get check` failed, you may have broken packages. Aborting...
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$  sudo pip install virtualenv
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+
+^CTraceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/dbus/bus.py", line 175, in activate_name_owner
+    return self.get_name_owner(bus_name)
+  File "/usr/lib/python3/dist-packages/dbus/bus.py", line 361, in get_name_owner
+    's', (bus_name,), **keywords)
+  File "/usr/lib/python3/dist-packages/dbus/connection.py", line 651, in call_blocking
+    message, timeout)
+dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.secrets': no such name
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/pip", line 11, in <module>
+    sys.exit(main())
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/__init__.py", line 18, in main
+    return _wrapper(args)
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/utils/entrypoints.py", line 31, in _wrapper
+    return main(args)
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/cli/main.py", line 73, in main
+    command = create_command(cmd_name, isolated=("--isolated" in cmd_args))
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/commands/__init__.py", line 104, in create_command
+    module = importlib.import_module(module_path)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/commands/install.py", line 17, in <module>
+    from pip._internal.cli.req_command import RequirementCommand, with_cleanup
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/cli/req_command.py", line 20, in <module>
+    from pip._internal.network.session import PipSession
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/network/session.py", line 26, in <module>
+    from pip._internal.network.auth import MultiDomainBasicAuth
+  File "/home/meet/.local/lib/python3.6/site-packages/pip/_internal/network/auth.py", line 34, in <module>
+    import keyring  # noqa
+  File "/usr/lib/python3/dist-packages/keyring/__init__.py", line 3, in <module>
+    from .core import (set_keyring, get_keyring, set_password, get_password,
+  File "/usr/lib/python3/dist-packages/keyring/core.py", line 153, in <module>
+    init_backend()
+  File "/usr/lib/python3/dist-packages/keyring/core.py", line 66, in init_backend
+    keyrings = filter(limit, backend.get_all_keyring())
+  File "/usr/lib/python3/dist-packages/keyring/util/__init__.py", line 21, in wrapper
+    func.always_returns = func(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/keyring/backend.py", line 196, in get_all_keyring
+    exceptions=TypeError))
+  File "/usr/lib/python3/dist-packages/keyring/util/__init__.py", line 31, in suppress_exceptions
+    for callable in callables:
+  File "/usr/lib/python3/dist-packages/keyring/backend.py", line 188, in is_class_viable
+    keyring_cls.priority
+  File "/usr/lib/python3/dist-packages/keyring/util/properties.py", line 24, in __get__
+    return self.fget.__get__(None, owner)()
+  File "/usr/lib/python3/dist-packages/keyring/backends/SecretService.py", line 38, in priority
+    list(secretstorage.get_all_collections(bus))
+  File "/usr/lib/python3/dist-packages/secretstorage/collection.py", line 144, in get_all_collections
+    service_obj = bus_get_object(bus, SS_PATH)
+  File "/usr/lib/python3/dist-packages/secretstorage/util.py", line 55, in bus_get_object
+    return bus.get_object(name, object_path, introspect=False)
+  File "/usr/lib/python3/dist-packages/dbus/bus.py", line 241, in get_object
+    follow_name_owner_changes=follow_name_owner_changes)
+  File "/usr/lib/python3/dist-packages/dbus/proxies.py", line 248, in __init__
+    self._named_service = conn.activate_name_owner(bus_name)
+  File "/usr/lib/python3/dist-packages/dbus/bus.py", line 180, in activate_name_owner
+    self.start_service_by_name(bus_name)
+  File "/usr/lib/python3/dist-packages/dbus/bus.py", line 278, in start_service_by_name
+    'su', (bus_name, flags)))
+  File "/usr/lib/python3/dist-packages/dbus/connection.py", line 651, in call_blocking
+    message, timeout)
+  File "/usr/lib/python3/dist-packages/dbus/exceptions.py", line 45, in __init__
+    def __init__(self, *args, **kwargs):
+KeyboardInterrupt
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ pip install virtualenv
+Defaulting to user installation because normal site-packages is not writeable
+Collecting virtualenv
+  Downloading virtualenv-20.0.31-py2.py3-none-any.whl (4.9 MB)
+     |████████████████████████████████| 4.9 MB 56 kB/s 
+Collecting importlib-resources>=1.0; python_version < "3.7"
+  Downloading importlib_resources-3.0.0-py2.py3-none-any.whl (23 kB)
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.1-py2.py3-none-any.whl (335 kB)
+     |████████████████████████████████| 335 kB 547 kB/s 
+Collecting importlib-metadata<2,>=0.12; python_version < "3.8"
+  Downloading importlib_metadata-1.7.0-py2.py3-none-any.whl (31 kB)
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python3/dist-packages (from virtualenv) (1.11.0)
+Collecting filelock<4,>=3.0.0
+  Downloading filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Collecting zipp>=0.4; python_version < "3.8"
+  Downloading zipp-3.1.0-py3-none-any.whl (4.9 kB)
+Installing collected packages: zipp, importlib-resources, distlib, importlib-metadata, appdirs, filelock, virtualenv
+Successfully installed appdirs-1.4.4 distlib-0.3.1 filelock-3.0.12 importlib-metadata-1.7.0 importlib-resources-3.0.0 virtualenv-20.0.31 zipp-3.1.0
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ 
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ python --version
+Python 3.6.9
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ virtualenv --version
+virtualenv 20.0.31 from /home/meet/.local/lib/python3.6/site-packages/virtualenv/__init__.py
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ virtualenv test
+created virtual environment CPython3.6.9.final.0-64 in 439ms
+  creator CPython3Posix(dest=/home/meet/Desktop/Semester5/projects/Facemaskdetection/test, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/meet/.local/share/virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ source venv/bin/activate
+bash: venv/bin/activate: No such file or directory
+meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ source test/bin/activate
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ pip install requests
+Collecting requests
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 20 kB/s 
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 197 kB/s 
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.10-py2.py3-none-any.whl (127 kB)
+     |████████████████████████████████| 127 kB 637 kB/s 
+Collecting certifi>=2017.4.17
+  Using cached certifi-2020.6.20-py2.py3-none-any.whl (156 kB)
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 503 kB/s 
+Installing collected packages: idna, urllib3, certifi, chardet, requests
+Successfully installed certifi-2020.6.20 chardet-3.0.4 idna-2.10 requests-2.24.0 urllib3-1.25.10
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the '/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/bin/python -m pip install --upgrade pip' command.
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ pip install -r requirements.txt
+Collecting tensorflow>=1.15.2
+  Downloading tensorflow-2.3.0-cp36-cp36m-manylinux2010_x86_64.whl (320.4 MB)
+     |████████████████████████████████| 320.4 MB 22 kB/s 
+Collecting keras==2.3.1
+  Downloading Keras-2.3.1-py2.py3-none-any.whl (377 kB)
+     |████████████████████████████████| 377 kB 123 kB/s 
+Collecting imutils==0.5.3
+  Downloading imutils-0.5.3.tar.gz (17 kB)
+Collecting numpy==1.18.2
+  Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+     |████████████████████████████████| 20.2 MB 60 kB/s 
+Collecting opencv-python==4.2.0.*
+  Downloading opencv_python-4.2.0.34-cp36-cp36m-manylinux1_x86_64.whl (28.2 MB)
+     |████████████████████████████████| 28.2 MB 46 kB/s 
+Collecting matplotlib==3.2.1
+  Downloading matplotlib-3.2.1-cp36-cp36m-manylinux1_x86_64.whl (12.4 MB)
+     |████████████████████████████████| 12.4 MB 61 kB/s 
+Collecting argparse==1.1
+  Downloading argparse-1.1.zip (151 kB)
+     |████████████████████████████████| 151 kB 3.0 MB/s 
+Collecting scipy==1.4.1
+  Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+     |████████████████████████████████| 26.1 MB 16 kB/s 
+Collecting scikit-learn==0.23.1
+  Downloading scikit_learn-0.23.1-cp36-cp36m-manylinux1_x86_64.whl (6.8 MB)
+     |████████████████████████████████| 6.8 MB 165 kB/s 
+Collecting pillow==7.2.0
+  Using cached Pillow-7.2.0-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+Collecting streamlit
+  Downloading streamlit-0.67.0-py2.py3-none-any.whl (7.2 MB)
+     |████████████████████████████████| 7.2 MB 39 kB/s 
+Collecting tensorflow-estimator<2.4.0,>=2.3.0
+  Downloading tensorflow_estimator-2.3.0-py2.py3-none-any.whl (459 kB)
+     |████████████████████████████████| 459 kB 4.0 MB/s 
+Collecting termcolor>=1.1.0
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+Collecting wrapt>=1.11.1
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Requirement already satisfied: wheel>=0.26 in ./test/lib/python3.6/site-packages (from tensorflow>=1.15.2->-r requirements.txt (line 1)) (0.35.1)
+Collecting six>=1.12.0
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting gast==0.3.3
+  Downloading gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
+Collecting astunparse==1.6.3
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting grpcio>=1.8.6
+  Downloading grpcio-1.32.0-cp36-cp36m-manylinux2014_x86_64.whl (3.8 MB)
+     |████████████████████████████████| 3.8 MB 79 kB/s 
+Collecting opt-einsum>=2.3.2
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     |████████████████████████████████| 65 kB 597 kB/s 
+Collecting protobuf>=3.9.2
+  Downloading protobuf-3.13.0-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 880 kB/s 
+Collecting google-pasta>=0.1.8
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     |████████████████████████████████| 57 kB 31 kB/s 
+Collecting tensorboard<3,>=2.3.0
+  Downloading tensorboard-2.3.0-py3-none-any.whl (6.8 MB)
+     |████████████████████████████████| 6.8 MB 6.4 kB/s 
+Collecting h5py<2.11.0,>=2.10.0
+  Downloading h5py-2.10.0-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+     |████████████████████████████████| 2.9 MB 42 kB/s 
+Collecting absl-py>=0.7.0
+  Downloading absl_py-0.10.0-py3-none-any.whl (127 kB)
+     |████████████████████████████████| 127 kB 628 kB/s 
+Collecting keras-preprocessing<1.2,>=1.1.1
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 279 kB/s 
+Collecting pyyaml
+  Downloading PyYAML-5.3.1.tar.gz (269 kB)
+     |████████████████████████████████| 269 kB 937 kB/s 
+Collecting keras-applications>=1.0.6
+  Downloading Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+     |████████████████████████████████| 50 kB 1.2 MB/s 
+Collecting python-dateutil>=2.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting cycler>=0.10
+  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting kiwisolver>=1.0.1
+  Using cached kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl (88 kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting joblib>=0.11
+  Downloading joblib-0.16.0-py3-none-any.whl (300 kB)
+     |████████████████████████████████| 300 kB 1.3 MB/s 
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting click>=7.0
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 80 kB/s 
+Requirement already satisfied: requests in ./test/lib/python3.6/site-packages (from streamlit->-r requirements.txt (line 11)) (2.24.0)
+Collecting toml
+  Downloading toml-0.10.1-py2.py3-none-any.whl (19 kB)
+Collecting tzlocal
+  Downloading tzlocal-2.1-py2.py3-none-any.whl (16 kB)
+Collecting botocore>=1.13.44
+  Downloading botocore-1.18.2-py2.py3-none-any.whl (6.6 MB)
+     |████████████████████████████████| 6.6 MB 5.2 kB/s 
+Collecting pandas>=0.21.0
+  Downloading pandas-1.1.2-cp36-cp36m-manylinux1_x86_64.whl (10.5 MB)
+     |████████████████████████████████| 10.5 MB 50 kB/s 
+Collecting enum-compat
+  Downloading enum_compat-0.0.3-py3-none-any.whl (1.3 kB)
+Collecting validators
+  Downloading validators-0.18.1-py3-none-any.whl (19 kB)
+Collecting packaging
+  Downloading packaging-20.4-py2.py3-none-any.whl (37 kB)
+Collecting pyarrow
+  Downloading pyarrow-1.0.1-cp36-cp36m-manylinux2014_x86_64.whl (17.3 MB)
+     |████████████████████████████████| 17.3 MB 669 kB/s 
+Collecting base58
+  Downloading base58-2.0.1-py3-none-any.whl (4.3 kB)
+Collecting astor
+  Downloading astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting blinker
+  Downloading blinker-1.4.tar.gz (111 kB)
+     |████████████████████████████████| 111 kB 1.7 MB/s 
+Collecting tornado>=5.0
+  Downloading tornado-6.0.4.tar.gz (496 kB)
+     |████████████████████████████████| 496 kB 8.4 MB/s 
+Collecting boto3
+  Downloading boto3-1.15.2-py2.py3-none-any.whl (129 kB)
+     |████████████████████████████████| 129 kB 888 kB/s 
+Collecting cachetools>=4.0
+  Downloading cachetools-4.1.1-py3-none-any.whl (10 kB)
+Collecting altair>=3.2.0
+  Downloading altair-4.1.0-py3-none-any.whl (727 kB)
+     |████████████████████████████████| 727 kB 2.3 MB/s 
+Collecting pydeck>=0.1.dev5
+  Downloading pydeck-0.5.0b1-py2.py3-none-any.whl (4.4 MB)
+     |████████████████████████████████| 4.4 MB 506 kB/s 
+Collecting watchdog
+  Downloading watchdog-0.10.3.tar.gz (94 kB)
+     |████████████████████████████████| 94 kB 28 kB/s 
+Requirement already satisfied: setuptools in ./test/lib/python3.6/site-packages (from protobuf>=3.9.2->tensorflow>=1.15.2->-r requirements.txt (line 1)) (49.6.0)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.2.2-py3-none-any.whl (88 kB)
+     |████████████████████████████████| 88 kB 784 kB/s 
+Collecting werkzeug>=0.11.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+     |████████████████████████████████| 298 kB 3.3 MB/s 
+Collecting google-auth<2,>=1.6.3
+  Downloading google_auth-1.21.2-py2.py3-none-any.whl (93 kB)
+     |████████████████████████████████| 93 kB 192 kB/s 
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.7.0-py3-none-any.whl (779 kB)
+     |████████████████████████████████| 779 kB 156 kB/s 
+Requirement already satisfied: certifi>=2017.4.17 in ./test/lib/python3.6/site-packages (from requests->streamlit->-r requirements.txt (line 11)) (2020.6.20)
+Requirement already satisfied: chardet<4,>=3.0.2 in ./test/lib/python3.6/site-packages (from requests->streamlit->-r requirements.txt (line 11)) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in ./test/lib/python3.6/site-packages (from requests->streamlit->-r requirements.txt (line 11)) (1.25.10)
+Requirement already satisfied: idna<3,>=2.5 in ./test/lib/python3.6/site-packages (from requests->streamlit->-r requirements.txt (line 11)) (2.10)
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 479 kB/s 
+Collecting jmespath<1.0.0,>=0.7.1
+  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting decorator>=3.4.0
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting s3transfer<0.4.0,>=0.3.0
+  Downloading s3transfer-0.3.3-py2.py3-none-any.whl (69 kB)
+     |████████████████████████████████| 69 kB 935 kB/s 
+Collecting entrypoints
+  Downloading entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting toolz
+  Downloading toolz-0.10.0-py3-none-any.whl (56 kB)
+     |████████████████████████████████| 56 kB 449 kB/s 
+Collecting jsonschema
+  Downloading jsonschema-3.2.0-py2.py3-none-any.whl (56 kB)
+     |████████████████████████████████| 56 kB 856 kB/s 
+Collecting jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+     |████████████████████████████████| 125 kB 412 kB/s 
+Collecting traitlets>=4.3.2
+  Downloading traitlets-4.3.3-py2.py3-none-any.whl (75 kB)
+     |████████████████████████████████| 75 kB 830 kB/s 
+Collecting ipykernel>=5.1.2; python_version >= "3.4"
+  Downloading ipykernel-5.3.4-py3-none-any.whl (120 kB)
+     |████████████████████████████████| 120 kB 1.0 MB/s 
+Collecting ipywidgets>=7.0.0
+  Downloading ipywidgets-7.5.1-py2.py3-none-any.whl (121 kB)
+     |████████████████████████████████| 121 kB 961 kB/s 
+Collecting pathtools>=0.1.1
+  Downloading pathtools-0.1.2.tar.gz (11 kB)
+Collecting importlib-metadata; python_version < "3.8"
+  Using cached importlib_metadata-1.7.0-py2.py3-none-any.whl (31 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 16 kB/s 
+Collecting rsa<5,>=3.1.4; python_version >= "3.5"
+  Downloading rsa-4.6-py3-none-any.whl (47 kB)
+     |████████████████████████████████| 47 kB 501 kB/s 
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Collecting pyrsistent>=0.14.0
+  Downloading pyrsistent-0.17.3.tar.gz (106 kB)
+     |████████████████████████████████| 106 kB 369 kB/s 
+Collecting attrs>=17.4.0
+  Downloading attrs-20.2.0-py2.py3-none-any.whl (48 kB)
+     |████████████████████████████████| 48 kB 448 kB/s 
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+Collecting ipython-genutils
+  Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting ipython>=5.0.0
+  Downloading ipython-7.16.1-py3-none-any.whl (785 kB)
+     |████████████████████████████████| 785 kB 133 kB/s 
+Collecting jupyter-client
+  Downloading jupyter_client-6.1.7-py3-none-any.whl (108 kB)
+     |████████████████████████████████| 108 kB 1.8 MB/s 
+Collecting widgetsnbextension~=3.5.0
+  Downloading widgetsnbextension-3.5.1-py2.py3-none-any.whl (2.2 MB)
+     |████████████████████████████████| 2.2 MB 766 kB/s 
+Collecting nbformat>=4.2.0
+  Downloading nbformat-5.0.7-py3-none-any.whl (170 kB)
+     |████████████████████████████████| 170 kB 564 kB/s 
+Collecting zipp>=0.5
+  Using cached zipp-3.1.0-py3-none-any.whl (4.9 kB)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 650 kB/s 
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+     |████████████████████████████████| 147 kB 1.9 MB/s 
+Collecting pygments
+  Downloading Pygments-2.7.1-py3-none-any.whl (944 kB)
+     |████████████████████████████████| 944 kB 80 kB/s 
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting jedi>=0.10
+  Downloading jedi-0.17.2-py2.py3-none-any.whl (1.4 MB)
+     |████████████████████████████████| 1.4 MB 480 kB/s 
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Downloading prompt_toolkit-3.0.7-py3-none-any.whl (355 kB)
+     |████████████████████████████████| 355 kB 484 kB/s 
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting pexpect; sys_platform != "win32"
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     |████████████████████████████████| 59 kB 37 kB/s 
+Collecting pyzmq>=13
+  Downloading pyzmq-19.0.2-cp36-cp36m-manylinux1_x86_64.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 378 kB/s 
+Collecting jupyter-core>=4.6.0
+  Downloading jupyter_core-4.6.3-py2.py3-none-any.whl (83 kB)
+     |████████████████████████████████| 83 kB 192 kB/s 
+Collecting notebook>=4.4.1
+  Downloading notebook-6.1.4-py3-none-any.whl (9.5 MB)
+     |████████████████████████████████| 9.5 MB 39 kB/s 
+Collecting parso<0.8.0,>=0.7.0
+  Downloading parso-0.7.1-py2.py3-none-any.whl (109 kB)
+     |████████████████████████████████| 109 kB 1.4 MB/s 
+Collecting wcwidth
+  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting ptyprocess>=0.5
+  Downloading ptyprocess-0.6.0-py2.py3-none-any.whl (39 kB)
+Collecting argon2-cffi
+  Downloading argon2_cffi-20.1.0-cp35-abi3-manylinux1_x86_64.whl (97 kB)
+     |████████████████████████████████| 97 kB 1.4 MB/s 
+Collecting nbconvert
+  Downloading nbconvert-6.0.5-py3-none-any.whl (505 kB)
+     |████████████████████████████████| 505 kB 6.7 MB/s 
+Collecting prometheus-client
+  Downloading prometheus_client-0.8.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 484 kB/s 
+Collecting terminado>=0.8.3
+  Downloading terminado-0.9.1-py3-none-any.whl (13 kB)
+Collecting Send2Trash
+  Downloading Send2Trash-1.5.0-py3-none-any.whl (12 kB)
+Collecting cffi>=1.0.0
+  Downloading cffi-1.14.3-cp36-cp36m-manylinux1_x86_64.whl (400 kB)
+     |████████████████████████████████| 400 kB 14 kB/s 
+Collecting jupyterlab-pygments
+  Downloading jupyterlab_pygments-0.1.1-py2.py3-none-any.whl (4.6 kB)
+Collecting nbclient<0.6.0,>=0.5.0
+  Downloading nbclient-0.5.0-py3-none-any.whl (65 kB)
+     |████████████████████████████████| 65 kB 382 kB/s 
+Collecting testpath
+  Downloading testpath-0.4.4-py2.py3-none-any.whl (163 kB)
+     |████████████████████████████████| 163 kB 1.3 MB/s 
+Collecting defusedxml
+  Downloading defusedxml-0.6.0-py2.py3-none-any.whl (23 kB)
+Collecting pandocfilters>=1.4.1
+  Downloading pandocfilters-1.4.2.tar.gz (14 kB)
+Collecting bleach
+  Downloading bleach-3.2.1-py2.py3-none-any.whl (145 kB)
+     |████████████████████████████████| 145 kB 580 kB/s 
+Collecting mistune<2,>=0.8.1
+  Downloading mistune-0.8.4-py2.py3-none-any.whl (16 kB)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.4.0-py3-none-any.whl (5.2 kB)
+Collecting async-generator
+  Downloading async_generator-1.10-py3-none-any.whl (18 kB)
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: imutils, argparse, termcolor, wrapt, pyyaml, blinker, tornado, watchdog, pathtools, pyrsistent, pandocfilters
+  Building wheel for imutils (setup.py) ... done
+  Created wheel for imutils: filename=imutils-0.5.3-py3-none-any.whl size=25853 sha256=e3b9f5146fb88606c1913f6131458ca0e0aac52faed82f51f5717e4c9b2ebed8
+  Stored in directory: /home/meet/.cache/pip/wheels/27/4d/3a/6dcdf7c3ebc87bf1ae013d96c9cf060ccfe334bb5ee769f377
+  Building wheel for argparse (setup.py) ... done
+  Created wheel for argparse: filename=argparse-1.1-py3-none-any.whl size=20734 sha256=b62a9621251e78c74bf6c7c9ea2df151dad90057a808a79187ee3d69989cd475
+  Stored in directory: /home/meet/.cache/pip/wheels/d4/4c/ea/9ef39067a725262f2ad9f1af56bbdeb248d9d01c9b945b71c4
+  Building wheel for termcolor (setup.py) ... done
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=d8d33bf44ba05147001397fb0b5d230359df36b0dda8ed9a12b1ad433f106e84
+  Stored in directory: /home/meet/.cache/pip/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc
+  Building wheel for wrapt (setup.py) ... done
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp36-cp36m-linux_x86_64.whl size=67507 sha256=94ec6a6a1a77589fa453eb80481f88649a3d6f9179b09f82627c178002c12a47
+  Stored in directory: /home/meet/.cache/pip/wheels/32/42/7f/23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63
+  Building wheel for pyyaml (setup.py) ... done
+  Created wheel for pyyaml: filename=PyYAML-5.3.1-cp36-cp36m-linux_x86_64.whl size=44619 sha256=27bafbd88dc2a7b39934a3361cec3b1ad65e35d169eb1711c9d3ed4f53f71762
+  Stored in directory: /home/meet/.cache/pip/wheels/e5/9d/ad/2ee53cf262cba1ffd8afe1487eef788ea3f260b7e6232a80fc
+  Building wheel for blinker (setup.py) ... done
+  Created wheel for blinker: filename=blinker-1.4-py3-none-any.whl size=13452 sha256=1604123ffa397defc7ef536fa376d4b392ec3e27a0ec1fddd22a46ca88901a91
+  Stored in directory: /home/meet/.cache/pip/wheels/4f/4a/93/c5ed8c11fedbe97fb8b8032b301eaa736248684b44087a7259
+  Building wheel for tornado (setup.py) ... done
+  Created wheel for tornado: filename=tornado-6.0.4-cp36-cp36m-linux_x86_64.whl size=427625 sha256=d0bc6b71e6b4cb95ed12440a36d19263ddf945e9156510f4c492e917318a5ccd
+  Stored in directory: /home/meet/.cache/pip/wheels/37/a7/db/2d592e44029ef817f3ef63ea991db34191cebaef087a96f505
+  Building wheel for watchdog (setup.py) ... done
+  Created wheel for watchdog: filename=watchdog-0.10.3-py3-none-any.whl size=73868 sha256=d86ee02573818146d0f41b0e9d342bb8fbfd8d1bc90ba3930ff751165244c6f3
+  Stored in directory: /home/meet/.cache/pip/wheels/a1/d5/fc/fddf5870c0fb0b755abdf41f4889ef54742ee21fff693aae22
+  Building wheel for pathtools (setup.py) ... done
+  Created wheel for pathtools: filename=pathtools-0.1.2-py3-none-any.whl size=8785 sha256=c9018dce4e76dee6e17c4063058b283a5a078e7bbc66c70532c596dab7850b6d
+  Stored in directory: /home/meet/.cache/pip/wheels/42/ea/90/e37d463fb3b03848bf715080595de62545266f53dd546b2497
+  Building wheel for pyrsistent (setup.py) ... done
+  Created wheel for pyrsistent: filename=pyrsistent-0.17.3-cp36-cp36m-linux_x86_64.whl size=97030 sha256=f50529b7911680da9077b8d8ed835679c787e8a55327a4ad833ca3cae659f02e
+  Stored in directory: /home/meet/.cache/pip/wheels/34/13/19/294da8e11bce7e563afee51251b9fa878185e14f4b5caf00cb
+  Building wheel for pandocfilters (setup.py) ... done
+  Created wheel for pandocfilters: filename=pandocfilters-1.4.2-py3-none-any.whl size=7855 sha256=ce1d1f0073c0b3902a91eeeb877f4d557e9d24566d3cbf660e0aeec883e48b80
+  Stored in directory: /home/meet/.cache/pip/wheels/46/c4/40/718c6fd14c2129ccaee10e0cf03ef6c4d01d98cad5dbbfda38
+Successfully built imutils argparse termcolor wrapt pyyaml blinker tornado watchdog pathtools pyrsistent pandocfilters
+Installing collected packages: numpy, scipy, tensorflow-estimator, termcolor, wrapt, six, gast, astunparse, grpcio, opt-einsum, protobuf, google-pasta, zipp, importlib-metadata, markdown, werkzeug, absl-py, pyasn1, pyasn1-modules, rsa, cachetools, google-auth, oauthlib, requests-oauthlib, google-auth-oauthlib, tensorboard-plugin-wit, tensorboard, h5py, keras-preprocessing, tensorflow, pyyaml, keras-applications, keras, imutils, opencv-python, python-dateutil, cycler, kiwisolver, pyparsing, matplotlib, argparse, joblib, threadpoolctl, scikit-learn, pillow, click, toml, pytz, tzlocal, jmespath, botocore, pandas, enum-compat, decorator, validators, packaging, pyarrow, base58, astor, blinker, tornado, s3transfer, boto3, entrypoints, toolz, pyrsistent, attrs, jsonschema, MarkupSafe, jinja2, altair, ipython-genutils, traitlets, pygments, pickleshare, parso, jedi, wcwidth, prompt-toolkit, backcall, ptyprocess, pexpect, ipython, pyzmq, jupyter-core, jupyter-client, ipykernel, pycparser, cffi, argon2-cffi, nbformat, jupyterlab-pygments, nest-asyncio, async-generator, nbclient, testpath, defusedxml, pandocfilters, webencodings, bleach, mistune, nbconvert, prometheus-client, terminado, Send2Trash, notebook, widgetsnbextension, ipywidgets, pydeck, pathtools, watchdog, streamlit
+Successfully installed MarkupSafe-1.1.1 Send2Trash-1.5.0 absl-py-0.10.0 altair-4.1.0 argon2-cffi-20.1.0 argparse-1.1 astor-0.8.1 astunparse-1.6.3 async-generator-1.10 attrs-20.2.0 backcall-0.2.0 base58-2.0.1 bleach-3.2.1 blinker-1.4 boto3-1.15.2 botocore-1.18.2 cachetools-4.1.1 cffi-1.14.3 click-7.1.2 cycler-0.10.0 decorator-4.4.2 defusedxml-0.6.0 entrypoints-0.3 enum-compat-0.0.3 gast-0.3.3 google-auth-1.21.2 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 grpcio-1.32.0 h5py-2.10.0 importlib-metadata-1.7.0 imutils-0.5.3 ipykernel-5.3.4 ipython-7.16.1 ipython-genutils-0.2.0 ipywidgets-7.5.1 jedi-0.17.2 jinja2-2.11.2 jmespath-0.10.0 joblib-0.16.0 jsonschema-3.2.0 jupyter-client-6.1.7 jupyter-core-4.6.3 jupyterlab-pygments-0.1.1 keras-2.3.1 keras-applications-1.0.8 keras-preprocessing-1.1.2 kiwisolver-1.2.0 markdown-3.2.2 matplotlib-3.2.1 mistune-0.8.4 nbclient-0.5.0 nbconvert-6.0.5 nbformat-5.0.7 nest-asyncio-1.4.0 notebook-6.1.4 numpy-1.18.2 oauthlib-3.1.0 opencv-python-4.2.0.34 opt-einsum-3.3.0 packaging-20.4 pandas-1.1.2 pandocfilters-1.4.2 parso-0.7.1 pathtools-0.1.2 pexpect-4.8.0 pickleshare-0.7.5 pillow-7.2.0 prometheus-client-0.8.0 prompt-toolkit-3.0.7 protobuf-3.13.0 ptyprocess-0.6.0 pyarrow-1.0.1 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycparser-2.20 pydeck-0.5.0b1 pygments-2.7.1 pyparsing-2.4.7 pyrsistent-0.17.3 python-dateutil-2.8.1 pytz-2020.1 pyyaml-5.3.1 pyzmq-19.0.2 requests-oauthlib-1.3.0 rsa-4.6 s3transfer-0.3.3 scikit-learn-0.23.1 scipy-1.4.1 six-1.15.0 streamlit-0.67.0 tensorboard-2.3.0 tensorboard-plugin-wit-1.7.0 tensorflow-2.3.0 tensorflow-estimator-2.3.0 termcolor-1.1.0 terminado-0.9.1 testpath-0.4.4 threadpoolctl-2.1.0 toml-0.10.1 toolz-0.10.0 tornado-6.0.4 traitlets-4.3.3 tzlocal-2.1 validators-0.18.1 watchdog-0.10.3 wcwidth-0.2.5 webencodings-0.5.1 werkzeug-1.0.1 widgetsnbextension-3.5.1 wrapt-1.12.1 zipp-3.1.0
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the '/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/bin/python -m pip install --upgrade pip' command.
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$  python3 train_mask_detector.py --dataset dataset
+2020-09-22 11:34:44.356781: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-22 11:34:44.356842: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[INFO] loading images...
+/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/PIL/Image.py:961: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+2020-09-22 11:35:22.724371: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-09-22 11:35:22.770474: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-09-22 11:35:22.790841: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (Nitro-AN515-54): /proc/driver/nvidia/version does not exist
+2020-09-22 11:35:22.846378: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-09-22 11:35:23.459652: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2400000000 Hz
+2020-09-22 11:35:23.542179: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5026dc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-09-22 11:35:23.542272: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
+9412608/9406464 [==============================] - 17s 2us/step
+[INFO] compiling model...
+[INFO] training head...
+2020-09-22 11:35:48.311376: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 19267584 exceeds 10% of free system memory.
+Epoch 1/20
+2020-09-22 11:35:53.051565: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 19267584 exceeds 10% of free system memory.
+2020-09-22 11:35:53.303489: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 19440000 exceeds 10% of free system memory.
+2020-09-22 11:35:53.431497: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 51380224 exceeds 10% of free system memory.
+2020-09-22 11:35:54.181224: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 51380224 exceeds 10% of free system memory.
+ 8/96 [=>............................] - ETA: 2:28 - loss: 1.0155 - accuracy: 0. 9/96 [=>............................] - ETA: 2:49 - loss: 0.9781 - accuracy: 0.10/96 [==>...........................] - ETA: 2:42 - loss: 0.9368 - accuracy: 0.11/96 [==>...........................] - ETA: 2:46 - loss: 0.9393 - accuracy: 0.12/96 [==>...........................] - ETA: 2:34 - loss: 0.9147 - accuracy: 0.13/96 [===>..........................] - ETA: 2:27 - loss: 0.8751 - accuracy: 0.14/96 [===>..........................] - ETA: 2:19 - loss: 0.8532 - accuracy: 0.15/96 [===>..........................] - ETA: 2:12 - loss: 0.8381 - accuracy: 0.16/96 [====>.........................] - ETA: 2:07 - loss: 0.8156 - accuracy: 0.17/96 [====>.........................] - ETA: 2:02 - loss: 0.7966 - accuracy: 0.18/96 [====>.........................] - ETA: 2:01 - loss: 0.7902 - accuracy: 0.19/96 [====>.........................] - ETA: 1:57 - loss: 0.7792 - accuracy: 0.20/96 [=====>........................] - ETA: 1:52 - loss: 0.7635 - accuracy: 0.21/96 [=====>........................] - ETA: 1:49 - loss: 0.7451 - accuracy: 0.22/96 [=====>........................] - ETA: 1:45 - loss: 0.7325 - accuracy: 0.23/96 [======>.......................] - ETA: 1:46 - loss: 0.7200 - accuracy: 0.24/96 [======>.......................] - ETA: 1:42 - loss: 0.7093 - accuracy: 0.25/96 [======>.......................] - ETA: 1:40 - loss: 0.6951 - accuracy: 0.26/96 [=======>......................] - ETA: 1:46 - loss: 0.6856 - accuracy: 0.27/96 [=======>......................] - ETA: 1:43 - loss: 0.6735 - accuracy: 0.28/96 [=======>......................] - ETA: 1:40 - loss: 0.6666 - accuracy: 0.29/96 [========>.....................] - ETA: 1:37 - loss: 0.6542 - accuracy: 0.30/96 [========>.....................] - ETA: 1:34 - loss: 0.6441 - accuracy: 0.31/96 [========>.....................] - ETA: 1:31 - loss: 0.6358 - accuracy: 0.32/96 [=========>....................] - ETA: 1:27 - loss: 0.6352 - accuracy: 0.33/96 [=========>....................] - ETA: 1:27 - loss: 0.6243 - accuracy: 0.34/96 [=========>....................] - ETA: 1:25 - loss: 0.6177 - accuracy: 0.35/96 [=========>....................] - ETA: 1:23 - loss: 0.6087 - accuracy: 0.36/96 [==========>...................] - ETA: 1:22 - loss: 0.5962 - accuracy: 0.37/96 [==========>...................] - ETA: 1:20 - loss: 0.5911 - accuracy: 0.38/96 [==========>...................] - ETA: 1:18 - loss: 0.5834 - accuracy: 0.39/96 [===========>..................] - ETA: 1:16 - loss: 0.5763 - accuracy: 0.40/96 [===========>..................] - ETA: 1:14 - loss: 0.5682 - accuracy: 0.41/96 [===========>..................] - ETA: 1:12 - loss: 0.5662 - accuracy: 0.42/96 [============>.................] - ETA: 1:10 - loss: 0.5586 - accuracy: 0.43/96 [============>.................] - ETA: 1:09 - loss: 0.5569 - accuracy: 0.44/96 [============>.................] - ETA: 1:07 - loss: 0.5542 - accuracy: 0.45/96 [=============>................] - ETA: 1:05 - loss: 0.5466 - accuracy: 0.46/96 [=============>................] - ETA: 1:04 - loss: 0.5454 - accuracy: 0.47/96 [=============>................] - ETA: 1:05 - loss: 0.5385 - accuracy: 0.48/96 [==============>...............] - ETA: 1:05 - loss: 0.5343 - accuracy: 0.49/96 [==============>...............] - ETA: 1:05 - loss: 0.5280 - accuracy: 0.50/96 [==============>...............] - ETA: 1:05 - loss: 0.5208 - accuracy: 0.51/96 [==============>...............] - ETA: 1:03 - loss: 0.5184 - accuracy: 0.52/96 [===============>..............] - ETA: 1:02 - loss: 0.5111 - accuracy: 0.53/96 [===============>..............] - ETA: 1:01 - loss: 0.5056 - accuracy: 0.54/96 [===============>..............] - ETA: 59s - loss: 0.5011 - accuracy: 0.755/96 [================>.............] - ETA: 57s - loss: 0.4972 - accuracy: 0.756/96 [================>.............] - ETA: 56s - loss: 0.4937 - accuracy: 0.757/96 [================>.............] - ETA: 54s - loss: 0.4920 - accuracy: 0.758/96 [=================>............] - ETA: 52s - loss: 0.4860 - accuracy: 0.759/96 [=================>............] - ETA: 51s - loss: 0.4816 - accuracy: 0.760/96 [=================>............] - ETA: 49s - loss: 0.4773 - accuracy: 0.761/96 [==================>...........] - ETA: 48s - loss: 0.4732 - accuracy: 0.762/96 [==================>...........] - ETA: 46s - loss: 0.4705 - accuracy: 0.763/96 [==================>...........] - ETA: 44s - loss: 0.4657 - accuracy: 0.764/96 [===================>..........] - ETA: 43s - loss: 0.4620 - accuracy: 0.765/96 [===================>..........] - ETA: 41s - loss: 0.4580 - accuracy: 0.766/96 [===================>..........] - ETA: 39s - loss: 0.4561 - accuracy: 0.767/96 [===================>..........] - ETA: 38s - loss: 0.4511 - accuracy: 0.768/96 [====================>.........] - ETA: 37s - loss: 0.4477 - accuracy: 0.769/96 [====================>.........] - ETA: 35s - loss: 0.4455 - accuracy: 0.770/96 [====================>.........] - ETA: 33s - loss: 0.4410 - accuracy: 0.771/96 [=====================>........] - ETA: 32s - loss: 0.4364 - accuracy: 0.772/96 [=====================>........] - ETA: 31s - loss: 0.4322 - accuracy: 0.773/96 [=====================>........] - ETA: 30s - loss: 0.4309 - accuracy: 0.774/96 [======================>.......] - ETA: 29s - loss: 0.4272 - accuracy80/9681/96 [========================>.....] - ETA: 19s - loss: 0.4045 - accuracy: 0.882/96 [========================>.....] - ETA: 17s - loss: 0.4004 - accuracy: 0.883/96 [========================>.....] - ETA: 16s - loss: 0.3985 - accuracy: 0.884/96 [=========================>....] - ETA: 15s - loss: 0.3948 - accuracy: 0.885/96 [=========================>....] - ETA: 13s - loss: 0.3921 - accuracy: 0.886/96 [=========================>....] - ETA: 12s - loss: 0.3899 - accuracy: 0.887/96 [==========================>...] - ETA: 11s - loss: 0.3874 - accuracy: 0.888/96 [==========================>...] - ETA: 10s - loss: 0.3863 - accuracy: 0.889/96 [==========================>...] - ETA: 8s - loss: 0.3835 - accuracy: 0.8290/96 [===========================>..] - ETA: 7s - loss: 0.3819 - accuracy: 0.8291/96 [===========================>..] - ETA: 6s - loss: 0.3805 - accuracy: 0.8292/96 [===========================>..] - ETA: 4s - loss: 0.3773 - accuracy: 0.8293/96 [============================>.] - ETA: 3s - loss: 0.3751 - accuracy: 0.8294/96 [============================>.] - ETA: 2s - loss: 0.3716 - accuracy: 0.8395/96 [============================>.] - ETA: 1s - loss: 0.3697 - accuracy: 0.8396/96 [==============================] - ETA: 0s - loss: 0.3688 - accuracy: 0.8396/96 [==============================] - 147s 2s/step - loss: 0.3688 - accuracy: 0.8328 - val_loss: 0.0932 - val_accuracy: 0.9857
+Epoch 2/20
+ 1/96 [..............................] - ETA: 0s - loss: 0.1685 - accuracy: 0.93 2/96 [..............................] - ETA: 27s - loss: 0.1228 - accuracy: 0.9 3/96 [..............................] - ETA: 41s - loss: 0.1426 - accuracy: 0.9 4/96 [>.............................] - ETA: 45s - loss: 0.1294 - accuracy: 0.9 5/96 [>.............................] - ETA: 54s - loss: 0.1240 - accuracy: 0.9 6/96 [>.............................] - ETA: 55s - loss: 0.1128 - accuracy: 0.9 7/96 [=>............................] - ETA: 54s - loss: 0.1039 - accuracy: 0.9 8/96 [=>............................] - ETA: 53s - loss: 0.1225 - accuracy: 0.9 9/96 [=>............................] - ETA: 52s - loss: 0.1201 - accuracy: 0.910/96 [==>...........................] - ETA: 50s - loss: 0.1177 - accuracy: 0.911/96 [==>...........................] - ETA: 50s - loss: 0.1113 - accuracy: 0.912/96 [==>...........................] - ETA: 49s - loss: 0.1207 - accuracy: 0.913/96 [===>..........................] - ETA: 48s - loss: 0.1220 - accuracy: 0.914/96 [===>..........................] - ETA: 49s - loss: 0.1320 - accuracy: 0.915/96 [===>..........................] - ETA: 48s - loss: 0.1287 - accuracy: 0.916/96 [====>.........................] - ETA: 48s - loss: 0.1264 - accuracy: 0.917/96 [====>.........................] - ETA: 47s - loss: 0.1308 - accuracy: 0.918/96 [====>.........................] - ETA: 48s - loss: 0.1289 - accuracy: 0.919/96 [====>.........................] - ETA: 47s - loss: 0.1260 - accuracy: 0.920/96 [=====>........................] - ETA: 46s - loss: 0.1281 - accuracy: 0.921/96 [=====>........................] - ETA: 45s - loss: 0.1307 - accuracy: 0.922/96 [=====>........................] - ETA: 45s - loss: 0.1304 - accuracy: 0.923/96 [======>.......................] - ETA: 44s - loss: 0.1367 - accuracy: 0.924/96 [======>.......................] - ETA: 43s - loss: 0.1359 - accuracy: 0.925/96 [======>.......................] - ETA: 43s - loss: 0.1353 - accuracy: 0.926/96 [=======>......................] - ETA: 42s - loss: 0.1425 - accuracy: 0.927/96 [=======>......................] - ETA: 41s - loss: 0.1474 - accuracy: 0.928/96 [=======>......................] - ETA: 40s - loss: 0.1486 - accuracy: 0.929/96 [========>.....................] - ETA: 38s - loss: 0.1506 - accuracy: 0.930/96 [========>.....................] - ETA: 38s - loss: 0.1492 - accuracy: 0.931/96 [========>.....................] - ETA: 38s - loss: 0.1464 - accuracy: 0.932/96 [=========>....................] - ETA: 37s - loss: 0.1463 - accuracy: 0.933/96 [=========>....................] - ETA: 37s - loss: 0.1462 - accuracy: 0.934/96 [=========>....................] - ETA: 36s - loss: 0.1458 - accuracy: 0.935/96 [=========>....................] - ETA: 36s - loss: 0.1430 - accuracy: 0.936/96 [==========>...................] - ETA: 35s - loss: 0.1413 - accuracy: 0.937/96 [==========>...................] - ETA: 34s - loss: 0.1404 - accuracy: 0.938/96 [==========>...................] - ETA: 34s - loss: 0.1379 - accuracy: 0.939/96 [===========>..................] - ETA: 33s - loss: 0.1369 - accuracy: 0.940/96 [===========>..................] - ETA: 33s - loss: 0.1357 - accuracy: 0.941/96 [===========>..................] - ETA: 32s - loss: 0.1374 - accuracy: 0.942/96 [============>.................] - ETA: 32s - loss: 0.1372 - accuracy: 0.943/96 [============>.................] - ETA: 31s - loss: 0.1383 - accuracy: 0.944/96 [============>.................] - ETA: 30s - loss: 0.1370 - accuracy: 0.945/96 [=============>................] - ETA: 30s - loss: 0.1369 - accuracy: 0.946/96 [=============>................] - ETA: 29s - loss: 0.1362 - accuracy: 0.947/96 [=============>................] - ETA: 29s - loss: 0.1377 - accuracy: 0.948/96 [==============>...............] - ETA: 28s - loss: 0.1357 - accuracy: 0.949/96 [==============>...............] - ETA: 27s - loss: 0.1344 - accuracy: 0.950/96 [==============>...............] - ETA: 27s - loss: 0.1339 - accuracy: 0.951/96 [==============>...............] - ETA: 26s - loss: 0.1327 - accuracy: 0.952/96 [===============>..............] - ETA: 25s - loss: 0.1321 - accuracy: 0.953/96 [===============>..............] - ETA: 25s - loss: 0.1332 - accuracy: 0.954/96 [===============>..............] - ETA: 24s - loss: 0.1321 - accuracy: 0.955/96 [================>.............] - ETA: 24s - loss: 0.1310 - accuracy: 0.956/96 [================>.............] - ETA: 23s - loss: 0.1314 - accuracy: 0.957/96 [================>.............] - ETA: 23s - loss: 0.1311 - accuracy: 0.958/96 [=================>............] - ETA: 22s - loss: 0.1305 - accuracy: 0.959/96 [=================>............] - ETA: 21s - loss: 0.1315 - accuracy: 0.960/96 [=================>............] - ETA: 21s - loss: 0.1306 - accuracy: 0.961/96 [==================>...........] - ETA: 20s - loss: 0.1304 - accuracy: 0.962/96 [==================>...........] - ETA: 19s - loss: 0.1300 - accuracy: 0.963/96 [==================>...........] - ETA: 19s - loss: 0.1293 - accuracy: 0.964/96 [===================>..........] - ETA: 18s - loss: 0.1288 - accuracy: 0.965/96 [===================>..........] - ETA: 18s - loss: 0.1285 - accuracy: 0.966/96 [===================>..........] - ETA: 17s - loss: 0.1270 - accuracy: 0.967/96 [===================>..........] - ETA: 17s - loss: 0.1273 - accuracy: 0.968/96 [====================>.........] - ETA: 16s - loss: 0.1261 - accuracy: 0.969/96 [====================>.........] - ETA: 15s - loss: 0.1256 - accuracy: 0.970/96 [====================>.........] - ETA: 15s - loss: 0.1261 - accuracy: 0.971/96 [=====================>........] - ETA: 14s - loss: 0.1284 - accuracy: 0.972/96 [=====================>........] - ETA: 14s - loss: 0.1274 - accuracy: 0.973/96 [=====================>........] - ETA: 13s - loss: 0.1298 - accuracy: 0.974/96 [======================>.......] - ETA: 12s - loss: 0.1290 - accuracy: 0.975/96 [======================>.......] - ETA: 12s - loss: 0.1284 - accuracy: 0.976/96 [======================>.......] - ETA: 11s - loss: 0.1287 - accuracy: 0.977/96 [=======================>......] - ETA: 11s - loss: 0.1282 - accuracy: 0.978/96 [=======================>......] - ETA: 10s - loss: 0.1283 - accuracy: 0.979/96 [=======================>......] - ETA: 10s - loss: 0.1278 - accuracy: 0.980/96 [========================>.....] - ETA: 9s - loss: 0.1277 - accuracy: 0.9581/96 [========================>.....] - ETA: 9s - loss: 0.1273 - accuracy: 0.9582/96 [========================>.....] - ETA: 8s - loss: 0.1271 - accuracy: 0.9583/96 [========================>.....] - ETA: 8s - loss: 0.1280 - accuracy: 0.9584/96 [=========================>....] - ETA: 7s - loss: 0.1277 - accuracy: 0.9585/96 [=========================>....] - ETA: 6s - loss: 0.1287 - accuracy: 0.9586/96 [=========================>....] - ETA: 6s - loss: 0.1278 - accuracy: 0.9587/96 [==========================>...] - ETA: 5s - loss: 0.1269 - accuracy: 0.9588/96 [==========================>...] - ETA: 4s - loss: 0.1278 - accuracy: 0.9589/96 [==========================>...] - ETA: 4s - loss: 0.1270 - accuracy: 0.9590/96 [===========================>..] - ETA: 3s - loss: 0.1271 - accuracy: 0.9591/96 [===========================>..] - ETA: 3s - loss: 0.1274 - accuracy: 0.9592/96 [===========================>..] - ETA: 2s - loss: 0.1269 - accuracy: 0.9593/96 [============================>.] - ETA: 1s - loss: 0.1263 - accuracy: 0.9594/96 [============================>.] - ETA: 1s - loss: 0.1264 - accuracy: 0.9595/96 [============================>.] - ETA: 0s - loss: 0.1259 - accuracy: 0.9596/96 [==============================] - ETA: 0s - loss: 0.1251 - accuracy: 0.9596/96 [==============================] - 71s 741ms/step - loss: 0.1251 - accuracy: 0.9560 - val_loss: 0.0658 - val_accuracy: 0.9883
+Epoch 3/20
+ 1/96 [..............................] - ETA: 0s - loss: 0.0142 - accuracy: 1.00 2/96 [..............................] - ETA: 25s - loss: 0.0623 - accuracy: 0.9 3/96 [..............................] - ETA: 33s - loss: 0.0778 - accuracy: 0.9 4/96 [>.............................] - ETA: 37s - loss: 0.0770 - accuracy: 0.9 5/96 [>.............................] - ETA: 39s - loss: 0.0920 - accuracy: 0.9 6/96 [>.............................] - ETA: 40s - loss: 0.0925 - accuracy: 0.9 7/96 [=>............................] - ETA: 41s - loss: 0.0953 - accuracy: 0.9 8/96 [=>............................] - ETA: 41s - loss: 0.0905 - accuracy: 0.9 9/96 [=>............................] - ETA: 42s - loss: 0.0930 - accuracy: 0.910/96 [==>...........................] - ETA: 42s - loss: 0.0906 - accuracy: 0.911/96 [==>...........................] - ETA: 42s - loss: 0.1054 - accuracy: 0.912/96 [==>...........................] - ETA: 41s - loss: 0.0986 - accuracy: 0.913/96 [===>..........................] - ETA: 41s - loss: 0.0980 - accuracy: 0.914/96 [===>..........................] - ETA: 41s - loss: 0.0958 - accuracy: 0.915/96 [===>..........................] - ETA: 41s - loss: 0.0977 - accuracy: 0.916/96 [====>.........................] - ETA: 40s - loss: 0.1001 - accuracy: 0.917/96 [====>.........................] - ETA: 40s - loss: 0.0999 - accuracy: 0.918/96 [====>.........................] - ETA: 40s - loss: 0.0973 - accuracy: 0.919/96 [====>.........................] - ETA: 39s - loss: 0.1010 - accuracy: 0.920/96 [=====>........................] - ETA: 39s - loss: 0.1043 - accuracy: 0.921/96 [=====>........................] - ETA: 38s - loss: 0.1036 - accuracy: 0.922/96 [=====>........................] - ETA: 38s - loss: 0.1010 - accuracy: 0.923/96 [======>.......................] - ETA: 37s - loss: 0.0984 - accuracy: 0.924/96 [======>.......................] - ETA: 37s - loss: 0.0969 - accuracy: 0.925/96 [======>.......................] - ETA: 37s - loss: 0.0950 - accuracy: 0.926/96 [=======>......................] - ETA: 36s - loss: 0.0999 - accuracy: 0.927/96 [=======>......................] - ETA: 36s - loss: 0.0996/96 [==============================] - 63s 653ms/step - loss: 0.0927 - accuracy: 0.9665 - val_loss: 0.0495 - val_accuracy: 0.9883
+Epoch 4/20
+96/96 [==============================] - 63s 657ms/step - loss: 0.0730 - accuracy: 0.9747 - val_loss: 0.0451 - val_accuracy: 0.9896
+Epoch 5/20
+96/96 [==============================] - 63s 654ms/step - loss: 0.0584 - accuracy: 0.9803 - val_loss: 0.0493 - val_accuracy: 0.9844
+Epoch 6/20
+96/96 [==============================] - 63s 655ms/step - loss: 0.0590 - accuracy: 0.9786 - val_loss: 0.0375 - val_accuracy: 0.9922
+Epoch 7/20
+96/96 [==============================] - 63s 652ms/step - loss: 0.0486 - accuracy: 0.9832 - val_loss: 0.0382 - val_accuracy: 0.9909
+Epoch 8/20
+96/96 [==============================] - 62s 646ms/step - loss: 0.0420 - accuracy: 0.9832 - val_loss: 0.0345 - val_accuracy: 0.9922
+Epoch 9/20
+96/96 [==============================] - 62s 649ms/step - loss: 0.0450 - accuracy: 0.9859 - val_loss: 0.0331 - val_accuracy: 0.9909
+Epoch 10/20
+96/96 [==============================] - 62s 649ms/step - loss: 0.0447 - accuracy: 0.9855 - val_loss: 0.0333 - val_accuracy: 0.9909
+Epoch 11/20
+96/96 [==============================] - 62s 651ms/step - loss: 0.0449 - accuracy: 0.9852 - val_loss: 0.0328 - val_accuracy: 0.9909
+Epoch 12/20
+96/96 [==============================] - 62s 651ms/step - loss: 0.0397 - accuracy: 0.9836 - val_loss: 0.0336 - val_accuracy: 0.9909
+Epoch 13/20
+96/96 [==============================] - 64s 663ms/step - loss: 0.0298 - accuracy: 0.9878 - val_loss: 0.0314 - val_accuracy: 0.9909
+Epoch 14/20
+96/96 [==============================] - 63s 655ms/step - loss: 0.0287 - accuracy: 0.9918 - val_loss: 0.0337 - val_accuracy: 0.9909
+Epoch 15/20
+96/96 [==============================] - 63s 656ms/step - loss: 0.0340 - accuracy: 0.9901 - val_loss: 0.0280 - val_accuracy: 0.9922
+Epoch 16/20
+96/96 [==============================] - 63s 656ms/step - loss: 0.0249 - accuracy: 0.9931 - val_loss: 0.0255 - val_accuracy: 0.9935
+Epoch 17/20
+96/96 [==============================] - 62s 648ms/step - loss: 0.0293 - accuracy: 0.9908 - val_loss: 0.0360 - val_accuracy: 0.9909
+Epoch 18/20
+96/96 [==============================] - 63s 652ms/step - loss: 0.0290 - accuracy: 0.9911 - val_loss: 0.0371 - val_accuracy: 0.9909
+Epoch 19/20
+96/96 [==============================] - 62s 650ms/step - loss: 0.0223 - accuracy: 0.9938 - val_loss: 0.0253 - val_accuracy: 0.9935
+Epoch 20/20
+96/96 [==============================] - 55s 573ms/step - loss: 0.0232 - accuracy: 0.9911 - val_loss: 0.0253 - val_accuracy: 0.9922
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+   with_mask       0.99      1.00      0.99       384
+without_mask       1.00      0.99      0.99       386
+
+    accuracy                           0.99       770
+   macro avg       0.99      0.99      0.99       770
+weighted avg       0.99      0.99      0.99       770
+
+[INFO] saving mask detector model...
+Traceback (most recent call last):
+  File "train_mask_detector.py", line 149, in <module>
+    plt.plot(np.arange(0, N), H.history["acc"], label="train_acc")
+KeyError: 'acc'
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ gedit train_mask_detector.py
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ python train_mask_detector.py
+2020-09-22 12:05:28.014142: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-22 12:05:28.014216: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+usage: train_mask_detector.py [-h] -d DATASET [-p PLOT] [-m MODEL]
+train_mask_detector.py: error: the following arguments are required: -d/--dataset
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ python3 train_mask_detector.py --dataset dataset
+2020-09-22 12:06:02.417050: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-22 12:06:02.417077: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[INFO] loading images...
+/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/PIL/Image.py:961: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+2020-09-22 12:07:11.303730: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-09-22 12:07:11.409442: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-09-22 12:07:11.410334: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (Nitro-AN515-54): /proc/driver/nvidia/version does not exist
+2020-09-22 12:07:11.430015: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-09-22 12:07:11.871725: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2400000000 Hz
+2020-09-22 12:07:11.879973: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5531130 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-09-22 12:07:11.880063: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[INFO] compiling model...
+[INFO] training head...
+Epoch 1/20
+2020-09-22 12:07:19.645121: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 51380224 exceeds 10% of free system memory.
+2020-09-22 12:07:19.965095: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 51380224 exceeds 10% of free system memory.
+2020-09-22 12:07:20.078157: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 25690112 exceeds 10% of free system memory.
+2020-09-22 12:07:20.299337: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 154140672 exceeds 10% of free system memory.
+2020-09-22 12:07:20.422804: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 156905472 exceeds 10% of free system memory.
+96/96 [==============================] - 81s 841ms/step - loss: 0.4235 - accuracy: 0.8039 - val_loss: 0.1215 - val_accuracy: 0.9727
+Epoch 2/20
+96/96 [==============================] - 58s 609ms/step - loss: 0.1348 - accuracy: 0.9557 - val_loss: 0.0695 - val_accuracy: 0.9857
+Epoch 3/20
+96/96 [==============================] - 59s 615ms/step - loss: 0.0855 - accuracy: 0.9714 - val_loss: 0.0563 - val_accuracy: 0.9857
+Epoch 4/20
+96/96 [==============================] - 57s 594ms/step - loss: 0.0699 - accuracy: 0.9777 - val_loss: 0.0505 - val_accuracy: 0.9883
+Epoch 5/20
+96/96 [==============================] - 56s 579ms/step - loss: 0.0612 - accuracy: 0.9803 - val_loss: 0.0449 - val_accuracy: 0.9896
+Epoch 6/20
+96/96 [==============================] - 59s 619ms/step - loss: 0.0574 - accuracy: 0.9786 - val_loss: 0.0418 - val_accuracy: 0.9896
+Epoch 7/20
+96/96 [==============================] - 58s 603ms/step - loss: 0.0576 - accuracy: 0.9806 - val_loss: 0.0396 - val_accuracy: 0.9896
+Epoch 8/20
+96/96 [==============================] - 55s 575ms/step - loss: 0.0463 - accuracy: 0.9842 - val_loss: 0.0351 - val_accuracy: 0.9909
+Epoch 9/20
+96/96 [==============================] - 55s 574ms/step - loss: 0.0401 - accuracy: 0.9872 - val_loss: 0.0447 - val_accuracy: 0.9857
+Epoch 10/20
+96/96 [==============================] - 55s 575ms/step - loss: 0.0390 - accuracy: 0.9859 - val_loss: 0.0362 - val_accuracy: 0.9883
+Epoch 11/20
+89/96 [==========================>...] - ETA: 3s - loss: 0.0356 - accuracy: 0.9883 
+96/96 [==============================] - 55s 578ms/step - loss: 0.0364 - accuracy: 0.9882 - val_loss: 0.0480 - val_accuracy: 0.9857
+Epoch 12/20
+96/96 [==============================] - 56s 578ms/step - loss: 0.0368 - accuracy: 0.9872 - val_loss: 0.0360 - val_accuracy: 0.9870
+Epoch 13/20
+96/96 [==============================] - 55s 574ms/step - loss: 0.0420 - accuracy: 0.9859 - val_loss: 0.0455 - val_accuracy: 0.9844
+Epoch 14/20
+96/96 [==============================] - 56s 580ms/step - loss: 0.0354 - accuracy: 0.9882 - val_loss: 0.0325 - val_accuracy: 0.9909
+Epoch 15/20
+96/96 [==============================] - 55s 573ms/step - loss: 0.0346 - accuracy: 0.9911 - val_loss: 0.0347 - val_accuracy: 0.9896
+Epoch 16/20
+96/96 [==============================] - 55s 575ms/step - loss: 0.0299 - accuracy: 0.9898 - val_loss: 0.0338 - val_accuracy: 0.9909
+Epoch 17/20
+96/96 [==============================] - 55s 577ms/step - loss: 0.0259 - accuracy: 0.9924 - val_loss: 0.0248 - val_accuracy: 0.9935
+Epoch 18/20
+96/96 [==============================] - 55s 575ms/step - loss: 0.0330 - accuracy: 0.9892 - val_loss: 0.0227 - val_accuracy: 0.9948
+Epoch 19/20
+96/96 [==============================] - 55s 573ms/step - loss: 0.0327 - accuracy: 0.9882 - val_loss: 0.0283 - val_accuracy: 0.9922
+Epoch 20/20
+96/96 [==============================] - 56s 583ms/step - loss: 0.0235 - accuracy: 0.9928 - val_loss: 0.0231 - val_accuracy: 0.9935
+[INFO] evaluating network...
+^[[B
+
+              precision    recall  f1-score   support
+
+   with_mask       0.99      1.00      0.99       384
+without_mask       1.00      0.99      0.99       386
+
+    accuracy                           0.99       770
+   macro avg       0.99      0.99      0.99       770
+weighted avg       0.99      0.99      0.99       770
+
+[INFO] saving mask detector model...
+
+Traceback (most recent call last):
+  File "train_mask_detector.py", line 150, in <module>
+    plt.plot(np.arange(0, N), H.history["val_acc"], label="val_acc")
+KeyError: 'val_acc'
+
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ ~
+bash: /home/meet: Is a directory
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ 
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ 
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ 
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ 
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ gedit train_mask_detector.py
+(test) meet@Nitro-AN515-54:~/Desktop/Semester5/projects/Facemaskdetection$ python3 detect_mask_video.py
+2020-09-22 12:39:41.962538: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-09-22 12:39:41.962613: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[INFO] loading face detector model...
+[INFO] loading face mask detector model...
+2020-09-22 12:39:55.940419: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-09-22 12:39:55.940488: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-09-22 12:39:55.940532: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (Nitro-AN515-54): /proc/driver/nvidia/version does not exist
+2020-09-22 12:39:55.941052: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-09-22 12:39:56.115767: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2400000000 Hz
+2020-09-22 12:39:56.117385: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5f70630 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-09-22 12:39:56.117452: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[INFO] starting video stream...
+^CTraceback (most recent call last):
+  File "detect_mask_video.py", line 114, in <module>
+    (locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
+  File "detect_mask_video.py", line 71, in detect_and_predict_mask
+    preds = maskNet.predict(faces, batch_size=32)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py", line 130, in _method_wrapper
+    return method(self, *args, **kwargs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py", line 1579, in predict
+    steps_per_execution=self._steps_per_execution)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 1117, in __init__
+    model=model)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 364, in __init__
+    dataset = self.slice_inputs(indices_dataset, inputs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 397, in slice_inputs
+    grab_batch, num_parallel_calls=dataset_ops.AUTOTUNE)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 1702, in map
+    preserve_cardinality=True)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 4084, in __init__
+    use_legacy_function=use_legacy_function)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 3371, in __init__
+    self._function = wrapper_fn.get_concrete_function()
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 2939, in get_concrete_function
+    *args, **kwargs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 2906, in _get_concrete_function_garbage_collected
+    graph_function, args, kwargs = self._maybe_define_function(args, kwargs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 3213, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 3082, in _create_graph_function
+    shared_func_graph=False)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1542, in __init__
+    func_graph, self._attrs, self._garbage_collector)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 606, in __init__
+    self._func_graph.inputs, self._func_graph.outputs, attrs)
+  File "/home/meet/Desktop/Semester5/projects/Facemaskdetection/test/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 448, in __init__
+
