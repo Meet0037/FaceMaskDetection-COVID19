@@ -36,10 +36,10 @@ $ python3 detect_mask_video.py
 
 #### Our model gave 93% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.0.0</code>
 
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
+![](https://github.com/Meet0037/FaceMaskDetection-COVID19/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
 
 #### We got the following accuracy/loss training curve plot
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
+![](https://github.com/Meet0037/FaceMaskDetection-COVID19/blob/master/plot.png)
 
 ## Streamlit app
 
@@ -75,4 +75,4 @@ Given the trained COVID-19 face mask detector, we’ll proceed to implement two 
 
   1.  Detect COVID-19 face masks in images
   2.  Detect face masks in real-time video streams
->>>>>>> 3c9d0edd53287951d10fcc63b12fb9b68c6de209
+
